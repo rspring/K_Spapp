@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- page header -->
+    <div id="header">
+      <img class="nomargin" src="btn_prev.png" width="40" height="40" align="left" alt="">
+      <a href="help_software.html"><img class="nomargin" src="btn_next.png" width="40" height="40" align="right" alt=""></a>
+      1<h3>About</h3>
+    </div>
+    
+    <!-- page content -->
+    <div id="content">
+      <h4>The K-space app!</h4>
+      <p><img src="../icon-48.png" width="48" height="48" alt="" align="left">
+      Ever lost in K-space? Enjoy the <i>real</i> and <i>imaginary</i> part of MRI. This simple tutorial helps you understanding how K-space works in MRI. Manipulate the K-space of an MRI image by modifying parameters such as scan percentage, partial Fourier, K-space shutters or artificial noise. View the reconstructed image change in real-time.<br clear="all">
+      <p>
+      <img class="icon" src="../btn_thumb.png" width="48" height="48" alt="" align="left">
+      If you enjoy this app as much as I do, then please be so kind to leave a rating and review at Google Play store.
+      <div align="center">
+        <img src="googleplay.png" width="50%" height="50%" alt="" align="middle">
+      </div>
+      <p>Rudolf Springorum
+    </div>
+  </body>
+</html>

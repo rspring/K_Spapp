@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- page header -->
+    <div id="header">
+      <a href="help_software.html"><img class="nomargin" src="btn_prev.png" width="40" height="40" align="left" alt=""></a>
+      <a href="help_import.html"><img class="nomargin" src="btn_next.png" width="40" height="40" align="right" alt=""></a>
+      <h3>General</h3>
+    </div>
+    
+    <!-- page content -->
+    <div id="content">
+	<h4>Window</h4>
+		<p><img class="icon" src="../btn_wwl.png" width="48" height="48" alt="" align="left">
+		<p>Swipe to change window width (contrast) and window level (brightness)
+		<br clear="all">
+	<h4>Zoom</h4>
+		<p><img class="icon" src="../btn_zoom.png" width="48" height="48" alt="" align="left">
+		<p>Swipe to zoom into the image
+		<br clear="all">
+	<h4>Pan</h4>
+		<p><img class="icon" src="../btn_pan.png" width="48" height="48" alt="" align="left">
+		<p>Swipe to move the image around
+		<br clear="all">
+	<h4>Settings</h4>
+		<p><img class="icon" src="../btn_settings.png" width="48" height="48" alt="" align="left">
+		<p>When settings is selected, swiping changes the value of the selected K-space parameter.
+		<br clear="all">
+		</div>
+  </body>
+</html>

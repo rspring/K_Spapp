@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- page header -->
+    <div id="header">
+      <a href="help_general.html"><img class="nomargin" src="btn_prev.png" width="40" height="40" align="left" alt=""></a>
+      <a href="help_kspace.html"><img class="nomargin" src="btn_next.png" width="40" height="40" align="right" alt=""></a>
+      <h3>Import</h3>
+    </div>
+    
+    <!-- page content -->
+    <div id="content">
+	<h4>Default images</h4>
+		<p><img class="icon" src="../btn_image.png" width="48" height="48" alt="" align="left">
+		<p>Select this button to step through the default set of images
+		<br clear="all">
+	<h4>Gallery</h4>
+		<p><img class="icon" src="../btn_gallery.png" width="48" height="48" alt="" align="left">
+		<p>Select this button to import an image from the image gallery. The image will be shown in gray scale and cropped to its square center.
+		<br clear="all">
+	<h4>Camera</h4>
+		<p><img class="icon" src="../btn_camera.png" width="48" height="48" alt="" align="left">
+		<p>Select this to take a picture with the camera. The image will be shown in gray scale and cropped to its square center.
+		<br clear="all">
+    </div>
+  </body>
+</html>

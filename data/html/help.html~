@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Share QR</title>
+	<meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1,maximum-scale=1"/>
+		<link rel="stylesheet" href="jquery.mobile-1.4.2.min.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="jquery-1.10.1.min.js"></script>
+		<script src="jquery.mobile-1.4.2.min.js"></script>
+		<script src="swipe.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="article1" >
+  <div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+		<h1>K-Spapp</h1>
+	</div>
+	<div data-role="content" data_theme="b">
+	<h4>The K-space app!</h4>
+		<p><img src="../icon-48.png" width="48" height="48" alt="" align="left">
+		Ever lost in K-space? Enjoy the <i>real</i> and <i>imaginary</i> part of MRI. This simple tutorial helps you understanding how K-space works in MRI. Manipulate the K-space of an MRI image by modifying parameters such as scan percentage, partial Fourier, K-space shutters or artificial noise. View the reconstructed image change in real-time.<br clear="all">
+		<p>
+		<img class="icon" src="../btn_thumb.png" width="48" height="48" alt="" align="left">
+		If you enjoy this app as much as I do, then please be so kind to leave a rating and review at Google Play store.
+		<p><a href="http://mrapps.jouwweb.nl/">Visit K-Spapp website,<br>including privacy policy.</a>
+		<div align="center">
+			<img src="googleplay.png" width="50%" height="50%" alt="" align="middle">
+		</div>
+		<p>Rudolf Springorum
+	</div>
+</div>
+  
+<div data-role="page" id="About">
+	<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+		<a href="#article1" data-icon="home" data-iconpos="notext">Home</a>
+		<h1>About</h1>
+	</div>
+	<div data-role="content" data_theme="b">
+	<h4>Version</h4>
+		<p><img src="../icon-48.png" width="48" height="48" alt="" align="left">
+		Version 1.53
+		<p>(Build 11)<br clear="all">
+		<h4>Privacy Policy</h4>
+		<p>This is the privacy policy for the app K-Spapp. This app does not send, retrieve, store or analyze any personal data. K-Spapp has access to the following functions:
+		<h5>Camera</h5>
+		<p>K-Spapp allows the user to perform Fast Fourier Transforms on photo's taken with the phone's camera.
+		<h5>Photo's/media/files & Storage</h5>
+		<p>K-Spapp allows the user to perform Fast Fourier Transforms on photo's and images stored locally on the device.
+		<h5>Vibrate</h5>
+		<p>K-Spapp's graphical user interface makes use of hap-tic feedback (very short vibrations) to confirm user input.
+		
+	<h4>Software</h4>
+		<h5>Processing 3.2.1 (Linux-64)</h5>
+		<p>Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts. Since 2001, Processing has promoted software literacy within the visual arts and visual literacy within technology.
+		<p>W: http://android.processing.org/
+		
+		<h5>Android Mode 0250 (3.0-RC4)</h5>
+		<p>Processing for Android allows you to create Android apps using Processing. You can run your Processing sketches on Android devices with little or no changes in the code. You can also export your sketch as a signed package to upload to the Google Play Store.
+		<p>W: http://android.processing.org/
+		
+		<h5>JtransForms 3.1</h5>
+		<p>JTransforms is the first, open source, multi-threaded FFT library written in pure Java. Currently, four types of transforms are available. The code is derived from General Purpose FFT Package written by Takuya Ooura and from Java FFTPack written by Baoshe Zhang.
+		<p>W: https://github.com/wendykierp/JTransforms
+		
+		<h5>Ke:tai v12</h5>
+		<p>Lets you create mobile apps using Processing. Ke:tai is good at everything a mobile Android device does, and the desktop doesnt. Its an extensive library that gives you straight-forward access to sensors, cameras, and networking hardware.
+		<p>W: http://ketai.org/
+		
+		<h5>Android Studio 2.2.1</h5>
+		<p>Android Studio provides the fastest tools for building apps on every type of Android device. World-class code editing, debugging, performance tooling, a flexible build system, and an instant build/deploy system all allow you to focus on building unique and high quality apps.
+		<p>W: https://developer.android.com/studio/index.html
+		
+		<h5>Inkscape 0.91</h5>
+		<p>All icons designed in Inkscape.
+		<p>W: www.inkscape.org
+		
+		<h5>Gimp 2.8.16</h5>
+		<p>All MR images acquired with Philips Achieva and processed in Gimp.
+		<p>W: www.gimp.org
+		
+		<h5>Linux Mint 18 - Sarah - Cinnamon edition</h5>
+		<p>Linux Mint 18 is a long term support release which will be supported until 2021. It comes with updated software and brings refinements and many new features to make your desktop even more comfortable to use.
+		<p>W: https://www.linuxmint.com/
+	</div>
+</div>
+
+<div data-role="page" id="general">
+	<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+		<a href="#article1" data-icon="home" data-iconpos="notext">Home</a>
+		<h1>General</h1>
+	</div>
+	<div data-role="content" data_theme="b">
+	<h4>Window</h4>
+		<p><img class="icon" src="../btn_wwl.png" width="48" height="48" alt="" align="left">
+		<p>Swipe to change window width (contrast) and window level (brightness)<br clear="all">
+	<h4>Zoom</h4>
+		<p><img class="icon" src="../btn_zoom.png" width="48" height="48" alt="" align="left">
+		<p>Swipe to zoom into the image<br clear="all">
+	<h4>Pan</h4>
+		<p><img class="icon" src="../btn_pan.png" width="48" height="48" alt="" align="left">
+		<p>Swipe to move the image around<br clear="all">
+	<h4>Settings</h4>
+		<p><img class="icon" src="../btn_settings.png" width="48" height="48" alt="" align="left">
+		<p>When settings is selected, swiping changes the value of the selected K-space parameter.<br clear="all">
+	</div>
+</div>
+
+<div data-role="page" id="import">
+	<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+		<a href="#article1" data-icon="home" data-iconpos="notext">Home</a>
+		<h1>Select images</h1>
+	</div>
+	<div data-role="content" data_theme="b">
+	<h4>Default images</h4>
+		<p><img class="icon" src="../btn_image.png" width="48" height="48" alt="" align="left">
+		<p>Select this button to step through the default set of images<br clear="all">
+	<h4>Gallery</h4>
+		<p><img class="icon" src="../btn_gallery.png" width="48" height="48" alt="" align="left">
+		<p>Select this button to import an image from the image gallery. The image will be shown in gray scale and cropped to its square center.<br clear="all">
+	<h4>Camera</h4>
+		<p><img class="icon" src="../btn_camera.png" width="48" height="48" alt="" align="left">
+		<p>Select this to import a picture taken with the camera. The image will be shown in gray scale and cropped to its square center.<br clear="all">
+	</div>
+</div>
+
+<div data-role="page" id="kspace">
+	<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+		<a href="#article1" data-icon="home" data-iconpos="notext">Home</a>
+		<h1>K-space</h1>
+	</div>
+	<div data-role="content" data_theme="b">
+		<h4>Introduction</h4>
+		<p>Understanding K-space starts with understanding your car audio displaying a frequency spectrum while music is being played. The car stereo evaluates the audio signal and somehow extracts information about the frequencies from it.
+		<p>
+		<img class="mri" src="carstereo.png" align="left" width="48%" alt="">
+		<img class="mri" src="spectrum.png" align="right" width="48%" alt=""><br clear="all">
+		<p>The audio signal is a variation of signal over time. If the signal varies more rapidly over time, the frequency of the tone is higher.
+		<p>If two tones are played at the same time, the signals are added together. The more tones are played at the same time, the more difficult it becomes to recognize the frequency of each tone.
+		<h4>Fourier Transformation</h4>
+		<p>Without going into too much detail... The process of analyzing an audio signal and extracting  the frequencies and amplitudes of all tones in the music is  done using a Fourier Transform. By analyzing a short fragment of the audio data a Fourier Transform produces a graph that shows for each frequency its contribution in the analyzed audio signal.
+		<p>Information that was in the time domain is now converted to the frequency domain. The algorithm computers use to perform this transformation is called FFT (Fast Fourier Transformation). Applying the similar transformation again to the frequency data reverts back the original audio signal.
+		<h4>FFT in MRI</h4>
+		<p>In MRI scanners, for each row in an image a FFT is required to transform the signal from the time domain (as picked up by the coil) to the frequency domain. And then another FFT is required for each column to decode the phase information as well. This process is referred to as a two-dimensional FFT or 2D-FFT.
+		<p>
+		<img class="mri" src="kspace.png" width="33%" align="left" alt="">
+		<img class="mri" src="fftformula.png" width="33%" align="left" alt="">
+		<img class="mri" src="image.png" width="33%" align="left" alt=""><br clear="all">
+		<p><i>Image at the left represents K-space. Using a 2D-FFT transform the image at the right can be reconstructed from the data.</i>
+		<p>The matrix that holds the data as it is recorded from the MRI scanner is known as the K-space. In most cases a single line of data is acquired every repetition time. A scan completes when all lines required have been measured.
+		<h4>Artifacts</h4>
+		<p>Many of the artifacts that occur in MRI images can be explained as a result from this 2D-FFT. If information in the K-space is somehow inconsistent, this will result in typical MRI artifacts such as: blurring, ringing, motion, etc.
+		<h4>Further information</h4>
+		<p>There are many websites where K-space is explained in all detail. Some sites that I found particularly useful during the development of this app include:
+		<p>www.revisemri.com
+		<p>www.mriquestions.com
+	</div>
+</div>
+  
+
+<div data-role="page" id="perc">
+	<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+		<a href="#article1" data-icon="home" data-iconpos="notext">Home</a>
+		<h1>K-Spapp</h1>
+	</div>
+	<div data-role="content" data_theme="b">
+		<h4>Scan percentage</h4>
+		<p><img class="icon" src="../btn_perc.png" width="48" height="48" alt="" align="left">
+		To reduce scan time, the peripheral or outer part of K-space is not scanned. Not scanning these high frequency lines results in loss of spatial resolution. Due to the abrupt border between the part that is scanned and the part just filled with zero, ringing or truncation occurs.<br clear="all">
+		<p><img src="scanperc.png" width="30%" align="left" alt="">
+		The blue part of K-space is not scanned. In this example a scan percentage of 40% is used which means that only 40% of K-space is scanned. To reduce ringing the abrupt border between data and the blue part can be smoothened by applying filters.<br clear="all">
+		<h5>Voxel size</h5>
+		<p>Instead of specifying the percentage of K-space to acquire, it makes more sense to directly specify the resolution in the phase encoding direction. The scan percentage is calculated as:<br clear="all">
+		<p>Voxelsize<sub>(frequency)</sub> / Voxelsize<sub>(phase)</sub>.
+		<h5>Exercise</h5>		
+		<p>Apply a scan percentage of roughly somewhere in between 50%-75% until the ringing is clearly visible in the spinal cord. Then apply a "Hanning" filter and see how the truncation disappears and how this effects the resolution in the image.
+		<p>
+			<img class="mri" src="perc_original.png" width="33%" align="left" alt="">
+			<img class="mri" src="perc_62.png" width="33%" align="left" alt="">
+			<img class="mri" src="perc_62_hanning.png" width="33%" align="left" alt=""><br clear="all">
+		<p><i>From left to right: A) original image B) 60% scan percentage C) 60% scan percentage and 50% Hanning filter.</i>
+		<p>See "Hanning" filter for an example of such ringing filtering.
+	</div>
+</div>
+
+
+<div data-role="page" id="half">
+	<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+		<a href="#article1" data-icon="home" data-iconpos="notext">Home</a>
+		<h1>K-Spapp</h1>
+	</div>
+	<div data-role="content" data_theme="b">
+		<h4>Halfscan</h4>
+		<p><img class="icon" src="../btn_half.png" width="48" height="48" alt="" align="left">
+		To reduce scan time, a part of one side of K-space is not acquired. Instead the data is copied from the other side of K-space. This is possible because of the phase-conjugate symmetry. Every point in K-space can be copied 'mirrored' across the center point as follows:
+		<p>For each complex number [<em>a<strong>+</strong>bi</em>] found at (x,y) its mirrored complex number at (size-x,size-y) equals [<em>a<strong>-</strong>bi</em>]. They have equal amplitudes(a) and opposite phase(b<em>i</em>).<br clear="all">
+		<p><img src="halfscan.png" width="30%" align="left" alt="">
+		The blue part is derived from the opposite side of K-space. Unfortunately any noise in that area is copied too. The result is that applying halfscan decreases the signal-to-noise ratio.<br clear="all">
+		<p>In practice MRI systems do not allow very high halfscan factors. The symmetry in K-space helps to balance out motion. By scanning just over half of K-space, scans become very sensitive to motion artifacts and other nasty stuff.
+		<p>It is difficult to see in this app, but halfscan is applied in real-time. The increased amount of noise can be seen at very low noise levels. The best way to demonstrate halfscan is to add some spikes and see how halfscan copies these spikes from the other side.
+		<p>Halfscan is also known as partial Fourier or fractional NEX
+	</div>
+</div>
+
+
+<div data-role="page" id="outer">
+	<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+		<a href="#article1" data-icon="home" data-iconpos="notext">Home</a>
+		<h1>K-Spapp</h1>
+	</div>
+	<div data-role="content" data_theme="b">
+		<h4>K-Space shutter</h4>
+		<p><img class="icon" src="../btn_outer.png" width="48" height="48" alt="" align="left">
+		To further reduce scan time in 3D acquisition techniques the corners of K-space can be skipped. Only skipping the corners can be hardly noticed in the images. Applying larger shutters result in loss of spatial resolution and introduces ringing artifacts.<br clear="all">
+		<p><img src="shutter.png" width="30%" align="left" alt="">
+		The blue parts in this image represent the corners with a combined high phase encoding and high slice encoding as if it was scanned in a 3D acquisition. A small shutter such as shown here comes more or less for free. The missing data hardly influences the image quality. When the shutter becomes a circle smaller than K-space, loss of resolution occurs and ringing appears.
+		<p>These truncation artifacts can be solved by applying a filter. This will however decrease the signal intensity of the high frequency lines that contain spatial information. The resolution of the image will get even worse.     
+	</div>
+</div>
+
+<div data-role="page" id="inner">
+	<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+		<a href="#article1" data-icon="home" data-iconpos="notext">Home</a>
+		<h1>K-Spapp</h1>
+	</div>
+	<div data-role="content" data_theme="b">
+		<h4>Inner shutter</h4>
+		<p><img class="icon" src="../btn_inner.png" width="48" height="48" alt="" align="left">
+		Applying an inner shutter illustrates the importance of acquiring the center portion of K-space. By not scanning this part  the information about the rough outline of the image is gone. What's left is information that only contains the high spatial frequencies that contribute to the resolution of the image.<br clear="all">
+		<p><img src="inner.png" width="30%" align="left" alt="">
+		The only true application of applying an inner shutter is the key-hole technique. With dynamic scanning using key-hole, the outer part is scanned less frequently than the center part. The benefit is that shorter dynamic scan times can be used as spatial information is shared over multiple dynamic images.
+	</div>
+</div>
+
+</body>
+</html>

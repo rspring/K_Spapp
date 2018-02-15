@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- page header -->
+    <div id="header">
+      <a href="help_half.html"><img class="nomargin" src="btn_prev.png" width="40" height="40" align="left" alt=""></a>
+      <a href="help_filter.html"><img class="nomargin" src="btn_next.png" width="40" height="40" align="right" alt=""></a>
+      <h3>K-space</h3>
+    </div>
+    
+    <!-- page content -->
+    <div id="content">
+      <h4>K-Space shutter</h4>
+      <p><img class="icon" src="../btn_outer.png" width="48" height="48" alt="" align="left">
+      To further reduce scan time in 3D acquisition techniques the corners of K-space can be skipped. Only skipping the corners can be hardly noticed in the images. Applying larger shutters result in loss of spatial resolution and introduces ringing artifacts.<br clear="all">
+      <p><img src="shutter.png" width="30%" align="left" alt="">
+      The blue parts in this image represent the corners with a combined high phase encoding and high slice encoding as if it was scanned in a 3D acquisition. A small shutter such as shown here comes more or less for free. The missing data hardly influences the image quality. When the shutter becomes a circle smaller than K-space, loss of resolution occurs and ringing appears.
+      <p>These truncation artifacts can be solved by applying a filter. This will however decrease the signal intensity of the high frequency lines that contain spatial information. The resolution of the image will get even worse.
+      <h4>Inner shutter</h4>
+      <p><img class="icon" src="../btn_inner.png" width="48" height="48" alt="" align="left">
+      Applying an inner shutter illustrates the importance of acquiring the center portion of K-space. By not scanning this part  the information about the rough outline of the image is gone. What's left is information that only contains the high spatial frequencies that contribute to the resolution of the image.<br clear="all">
+      <p><img src="inner.png" width="30%" align="left" alt="">
+      The only true application of applying an inner shutter is the key-hole technique. With dynamic scanning using key-hole, the outer part is scanned less frequently than the center part. The benefit is that shorter dynamic scan times can be used as spatial information is shared over multiple dynamic images.
+    </div>
+  </body>
+</html>

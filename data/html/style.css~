@@ -1,0 +1,42 @@
+* {
+	border: 0 solid black;
+	font-family: DejaVu Sans;
+	font-size: small;
+}
+
+html, body {
+	background-color: #888;
+}
+
+sub {
+	font-size: xx-small;
+}
+
+div#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #444;
+}
+
+div#content {
+	padding: 40px 5px 0 5px;
+} 
+
+div#header h3 {
+	color: #999;
+   #background-color: yellow;
+}
+
+img {
+	margin: 0 5px 0 0;
+}
+
+img.icon {
+	background-color: #444;
+}
+img.nomargin {
+	margin: 0px;
+}

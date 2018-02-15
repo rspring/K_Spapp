@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- page header -->
+    <div id="header">
+      <a href="help_general.html"><img class="nomargin" src="btn_prev.png" width="40" height="40" align="left" alt=""></a>
+      <a href="help_perc.html"><img class="nomargin" src="btn_next.png" width="40" height="40" align="right" alt=""></a>
+      <h3>5 K-space</h3>
+    </div>
+    
+    <!-- page content -->
+    <div id="content">
+		<h4>Introduction</h4>
+		<p>Understanding K-space starts with understanding your car audio displaying a frequency spectrum while music is being played. The car stereo evaluates the audio signal and somehow extracts information about the frequencies from it.
+		<p>
+		<img class="mri" src="carstereo.png" align="left" width="48%" alt="">
+		<img class="mri" src="spectrum.png" align="right" width="48%" alt=""><br clear="all">
+		<p>The audio signal is a variation of signal over time. If the signal varies more rapidly over time, the frequency of the tone is higher.
+		<p>If two tones are played at the same time, the signals are added together. The more tones are played at the same time, the more difficult it becomes to recognize the frequency of each tone.
+		<h4>Fourier Transformation</h4>
+		<p>Without going into too much detail... The process of analyzing an audio signal and extracting  the frequencies and amplitudes of all tones in the music is  done using a Fourier Transform. By analyzing a short fragment of the audio data a Fourier Transform produces a graph that shows for each frequency its contribution in the analyzed audio signal.
+		<p>Information that was in the time domain is now converted to the frequency domain. The algorithm computers use to perform this transformation is called FFT (Fast Fourier Transformation). Applying the similar transformation again to the frequency data reverts back the original audio signal.
+		<h4>FFT in MRI</h4>
+		<p>In MRI scanners, for each row in an image a FFT is required to transform the signal from the time domain (as picked up by the coil) to the frequency domain. And then another FFT is required for each column to decode the phase information as well. This process is referred to as a two-dimensional FFT or 2D-FFT.
+		<p>
+		<img class="mri" src="kspace.png" width="33%" align="left" alt="">
+		<img class="mri" src="fftformula.png" width="33%" align="left" alt="">
+		<img class="mri" src="image.png" width="33%" align="left" alt=""><br clear="all">
+		<p><i>Image at the left represents K-space. Using a 2D-FFT transform the image at the right can be reconstructed from the data.</i>
+		<p>The matrix that holds the data as it is recorded from the MRI scanner is known as the K-space. In most cases a single line of data is acquired every repetition time. A scan completes when all lines required have been measured.
+		<h4>Artifacts</h4>
+		<p>Many of the artifacts that occur in MRI images can be explained as a result from this 2D-FFT. If information in the K-space is somehow inconsistent, this will result in typical MRI artifacts such as: blurring, ringing, motion, etc.
+		<h4>Further information</h4>
+		<p>There are many websites where K-space is explained in all detail. Some sites that I found particularly useful during the development of this app include:
+		<p>www.revisemri.com
+		<p>www.mriquestions.com
+    </div>
+  </body>
+</html>

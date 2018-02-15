@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- page header -->
+    <div id="header">
+      <a href="help_kspace.html"><img class="nomargin" src="btn_prev.png" width="40" height="40" align="left" alt=""></a>
+      <a href="help_half.html"><img class="nomargin" src="btn_next.png" width="40" height="40" align="right" alt=""></a>
+      <h3>6 K-space</h3>
+    </div>
+    
+    <!-- page content -->
+    <div id="content">
+		<h4>Scan percentage</h4>
+		<p><img class="icon" src="../btn_perc.png" width="48" height="48" alt="" align="left">
+		To reduce scan time, the peripheral or outer part of K-space is not scanned. Not scanning these high frequency lines results in loss of spatial resolution. Due to the abrupt border between the part that is scanned and the part just filled with zero, ringing or truncation occurs.<br clear="all">
+		<p><img src="scanperc.png" width="30%" align="left" alt="">
+		The blue part of K-space is not scanned. In this example a scan percentage of 40% is used which means that only 40% of K-space is scanned. To reduce ringing the abrupt border between data and the blue part can be smoothened by applying filters.<br clear="all">
+		<h5>Voxel size</h5>
+		<p>Instead of specifying the percentage of K-space to acquire, it makes more sense to directly specify the resolution in the phase encoding direction. The scan percentage is calculated as:<br clear="all">
+		<p>Voxelsize<sub>(frequency)</sub> / Voxelsize<sub>(phase)</sub>.
+		<h5>Exercise</h5>		
+		<p>Apply a scan percentage of roughly somewhere in between 50%-75% until the ringing is clearly visible in the spinal cord. Then apply a "Hanning" filter and see how the truncation disappears and how this effects the resolution in the image.
+		<p>
+			<img class="nomargin" src="perc_original.png" width="33%" align="left" alt="">
+			<img class="nomargin" src="perc_62.png" width="33%" align="left" alt="">
+			<img class="nomargin" src="perc_62_hanning.png" width="33%" align="left" alt=""><br clear="all">
+		<p><i>From left to right: A) original image B) 60% scan percentage C) 60% scan percentage and 50% Hanning filter.</i>
+		<p>See "Hanning" filter for an example of such ringing filtering.
+    </div>
+  </body>
+</html>
